@@ -24,6 +24,17 @@
   
 </head>
 <body>
+  <script src="dist/clipboard.min.js"></script>
+   <script>
+    var btn = document.getElementById('botondecopia');
+    var clipboard = new ClipboardJS(btn);
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+    </script>
   <section class="menu cid-rKfdu2NSx9" once="menu" id="menu1-0">
 
     
@@ -68,7 +79,7 @@
             
             <p class="mbr-text pb-3 mbr-fonts-style display-5">
                Minecraft Network Premium / No Premium &nbsp;(1.8 - 1.14.4)</p>
-            <div class="mbr-section-btn"><a class="btn btn-md btn-primary display-4" data-clipboard-text="play.ultraserver.me">COPIAR IP</a></div>
+            <div class="mbr-section-btn"><a class="botondecopia btn btn-md btn-primary display-4" data-clipboard-text="play.ultraserver.me">COPIAR IP</a></div>
         </div>
     </div>
 
